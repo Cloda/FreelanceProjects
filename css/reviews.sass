@@ -1,0 +1,60 @@
+.header-block
+    background-color: #078600
+    padding-bottom: 0
+.clients
+    max-width: 1170px
+    margin: auto
+    padding-left: 15px
+    padding-right: 15px
+    padding-bottom: 70px
+    margin-top: 70px
+    &__list
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        justify-content: space-between
+        margin-bottom: 40px
+    &__item
+        box-sizing: border-box
+        width: 370px
+        background-color: #FFFFFF
+        box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.07)
+        border-radius: 2px
+        margin-bottom: 30px
+        text-align: center
+        padding: 15px
+        padding-bottom: 30px
+        font-weight: 300
+        font-size: 18px
+        line-height: 168%
+        color: #333333
+        &-name
+            font-weight: normal
+            font-size: 22px
+            line-height: 168%
+    &-button
+        text-align: center
+        margin-bottom: 76px
+    &-img
+        position: absolute
+        margin-left: 60%
+        margin-top: -250px
+
+@media (max-width: 1100px) and (min-width: 750px)
+    .clients
+        margin-top: 50px
+        &__list
+            justify-content: center
+        &__item
+            margin-left: 10px
+@media (max-width: 750px)
+    .clients
+        margin-top: 50px
+        &__list
+            justify-content: center
+    .header
+        &-img
+            width: 175px
+        &-cart
+            text-align: right
+        

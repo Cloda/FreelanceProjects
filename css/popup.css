@@ -1,0 +1,60 @@
+.fancybox-bg {
+  background: rgba(32, 32, 32, 0.5);
+}
+
+.fancybox-slide--html .fancybox-close-small {
+  color: #DD2E44;
+}
+
+.popup__block {
+  display: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: white;
+  max-width: 370px;
+  min-width: 310px;
+  border-radius: 5px;
+  padding: 30px 20px;
+  text-align: center;
+  color: #333333;
+}
+
+.popup__block input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  padding: 17px 20px;
+  margin-bottom: 15px;
+  border: 1px solid #D7D7D7;
+}
+
+.popup__block input::-webkit-input-placeholder {
+  color: #BDBDBD;
+}
+
+.popup__block input::-moz-placeholder {
+  color: #BDBDBD;
+}
+
+.popup__title {
+  margin: 0;
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 25px;
+}
+
+.popup__text {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.popup__subtitle {
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.popup__subtitle a {
+  color: #0085FF;
+}
+/*# sourceMappingURL=popup.css.map */

@@ -1,0 +1,90 @@
+.clipPolygon 
+  -webkit-clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%)
+.btn
+    &__superblock
+        text-align: center
+    &__btn 
+        width: 300px
+        height: 70px
+        background: #FF7200
+        background-size: cover
+        display: inline-block
+    &__button
+        vertical-align: middle
+        text-align: center
+        display: inline-block
+        position: relative
+        & input
+            display: flex
+            height: 100%
+            width: 100%
+            align-items: center
+            justify-content: center
+            background-color: transparent
+            color: white
+            text-transform: uppercase
+            font-weight: 500
+            font-size: 18px
+            line-height: 21px
+            cursor: pointer
+        & a
+            color: white
+            text-transform: uppercase
+            font-weight: 500
+            font-size: 18px
+            line-height: 21px
+            display: flex
+            justify-content: center
+            height: 100%
+            align-items: center
+        &:after
+            content: ""
+            height: 2px
+            width: 279px
+            background: #FF7200
+            position: absolute
+            top: 73px
+            left: 10px
+            transition-property: width, margin-left
+            transition-duration: .2s
+        &:before
+            content: ""
+            height: 70px
+            width: 2px
+            background: #FF7200
+            position: absolute
+            margin-top: 5px
+            margin-left: 295px
+            transform: rotate(12deg)
+            transition-property: height, margin-top, margin-left
+            transition-duration: .2s
+        &:hover
+            &:before
+                height: 0
+                margin-top: 0px
+                margin-left: 304px
+            &:after
+                width: 0
+                margin-left: -10px
+@media (max-width: 1124px) and (min-width: 425px)
+    .btn
+        &__superblock
+            text-align: center !important
+@media (max-width: 425px)
+    .btn
+        &__superblock
+            text-align: center !important
+        &__btn
+            width: 240px
+            height: 55px
+        &__button
+            &:after
+                width: 222px
+                top: 58px
+            &:before
+                height: 55px
+                margin-left: 236px
+            &:hover
+                &:before
+                    height: 0
+                    margin-left: 245px

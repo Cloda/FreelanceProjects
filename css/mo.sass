@@ -1,0 +1,84 @@
+.header-block
+    background-color: #078600 
+.mo
+    &-text
+        max-width: 1170px
+        margin: auto
+        padding-left: 15px
+        padding-right: 15px
+        margin-top: 70px
+        &__title
+            font-weight: normal
+            font-size: 36px
+            line-height: 42px
+            margin: 0
+            margin-bottom: 20px
+        &__text
+            font-weight: 300
+            font-size: 16px
+            line-height: 23px
+    &-map
+        text-align: center
+        margin-bottom: 70px
+        margin-top: 100px 
+        &__img
+            max-width: 80%
+    &-zone
+        max-width: 1170px
+        margin: auto
+        margin-top: 60px
+        padding-left: 15px
+        padding-right: 15px
+        &__hidden
+            display: none
+        &__title
+            color: #333333
+            font-weight: 500
+            font-size: 38px
+            line-height: 130%
+            margin: 0
+            margin-bottom: 25px 
+        &__block
+            display: flex
+            flex-wrap: wrap
+        &__item
+            display: flex
+            align-items: center
+            margin-bottom: 17px
+            &:before
+                margin-right: 13px
+                content: url(../img/logo/home.svg)
+        &__list
+            padding: 0
+            margin: 0
+            margin-right: 60px
+        &__road
+            & > .mo-zone__item:before
+                content: url(../img/logo/road.svg)
+        
+@media (max-width: 750px)
+    .mo
+        &-text
+            &__title
+                font-weight: 500
+                font-size: 26px
+                line-height: 32px
+            &__text
+                font-weight: normal
+        &-map
+            display: none
+        &-zone
+            margin-bottom: 45px
+            &__title
+                font-size: 24px
+                line-height: 32px
+            &__block
+                display: none
+            &__hidden
+                display: flex
+                flex-wrap: wrap
+                justify-content: space-between
+            &__list
+                margin: 0
+                &:first-child
+                    margin-right: 10px

@@ -1,0 +1,282 @@
+.calc
+    position: relative
+    z-index: 10
+    max-width: 1030px
+    background-color: white
+    margin: auto
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.07)
+    border-radius: 2px
+    &__hidden
+        display: none
+    &__form
+        padding: 50px 100px
+    &__transport
+        background: #F6F6F6
+        border-radius: 46px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        &-item 
+            height: 40px
+            width: 25%
+            display: flex
+            border-radius: 46px
+            justify-content: center
+            align-items: center
+        &-label
+            position: relative
+            height: 100%
+            width: 100%
+            display: flex
+            justify-content: center
+            align-items: center
+        & .checked
+            background: #FF7200
+            align-items: center
+            position: relative
+            color: white
+            &:before
+                position: absolute
+                margin-left: -85px
+                margin-top: 2px
+                content: url(../img/logo/verified.svg)         
+    
+    &__option
+        display: flex
+        margin-top: 60px
+        font-size: 18px
+        line-height: 21px
+        margin-bottom: 50px
+        &-info
+            width: 50%
+            padding-right: 50px
+        &-list
+            display: flex
+        &-item
+            color: #BEBEBE
+            box-sizing: border-box 
+            height: 35px
+            width: 35px
+            margin-right: 25px
+            border-radius: 50%
+            display: flex
+            align-items: center
+            justify-content: center
+            border: 1px solid #BEBEBE
+        &-label
+            height: 100%
+            width: 100%
+            display: flex
+            justify-content: center
+            align-items: center
+            border-radius: 50%
+        &-circle .checked
+            color: white
+            background: #06276F
+        &-place
+            margin-top: 30px
+            margin-bottom: 30px
+            & .checked
+                color: white
+                background: #06276F
+        &-check
+            margin-bottom: 20px 
+            display: flex
+            align-items: center             
+            &::before
+                content: ""
+                display: flex
+                justify-content: center
+                align-items: center
+                margin-right: 10px
+                height: 30px
+                width: 30px 
+                border: 1px solid #BEBEBE
+                box-sizing: border-box
+                border-radius: 5px
+                vertical-align: middle
+        &-kpp .checked::before
+            content: url(../img/logo/tick.svg)
+            background: #06276F
+        &-venicle 
+            display: flex
+            flex-direction: column  
+            & .checked::before
+                content: url(../img/logo/tick.svg)
+                background: #06276F
+        
+        &-zacaz
+            padding-top: 35px 
+            width: 90%
+            margin-left: 10% 
+            border-top: 1px solid #BDBDBD
+        &-img
+            margin-bottom: 10px
+        &-head
+            font-size: 25px
+            line-height: 29px
+            margin: 0
+        &-price
+            margin: 0
+            color: #078600
+            font-size: 50px
+            line-height: 59px
+            & span
+                font-size: 30px
+                line-height: 35px
+        &-text
+            font-weight: 200
+            font-size: 12px
+            line-height: 14px
+            margin-bottom: 0
+        
+        &-phone
+            width: 100%
+            border: 1px solid #BEBEBE
+            box-sizing: border-box
+            border-radius: 2px
+            padding: 18px 30px 
+            font-size: 16px
+            line-height: 25px 
+        &-h
+            display: none
+    &__text
+        margin: auto
+        margin-top: 20px
+        font-size: 12px
+        line-height: 14px
+        text-align: center
+        max-width: 257px
+        & a
+            color: #2F80ED
+    &__btn
+        text-align: center
+    &__describe
+        display: flex
+        flex-direction: column
+        margin: auto
+        max-width: 1170px
+        margin-top: 70px
+        color: #333333
+        &-service
+            display: flex
+            justify-content: space-between
+        &-title
+            letter-spacing: 0.07em
+            font-weight: 700
+            font-size: 36px
+            line-height: 98%
+            margin-bottom: 20px
+        &-subtitle
+            margin-bottom: 20px
+            font-size: 16px
+            line-height: 23px
+    
+    &__item
+        box-sizing: border-box
+        display: flex
+        flex-direction: column
+        text-align: center
+        width: 20%
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.14)
+        border-radius: 2px
+        padding: 25px 15px 35px 15px
+        background-color: white 
+        &-title
+            margin-bottom: 14px
+            font-weight: bold
+            text-transform: uppercase
+            font-size: 18px
+            line-height: 21px
+        &-price
+            margin-bottom: 9px
+            color: #078600
+            font-weight: 500
+            font-size: 20px
+            line-height: 23px
+        &-img
+            margin-bottom: 9px
+@media (max-width: 1100px)
+    .calc
+        margin-top: 0
+        padding-bottom: 30px 
+        &__describe
+            margin-top: 0 
+            padding: 59px 10px 0 10px
+            &-subtitle
+                margin-bottom: 59px
+            &-service
+                justify-content: space-around
+                flex-wrap: wrap
+                margin: auto
+        &__item
+            max-width: 40%
+            margin-bottom: 57px
+            padding: 26px 15px 54px 15px
+            &-title
+                margin-bottom: 11px
+                font-size: 18px
+                line-height: 21px
+                font-weight: bold
+            &-price
+                margin-bottom: 10px
+            &-text
+                margin: auto
+                max-width: 400px
+                
+        &__transport
+            display: none
+        &__hidden
+            display: block
+            width: 100%
+            background: #FFFFFF
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.07)
+            &-list
+                display: none
+            &-item
+                padding: 15px 20px
+                color: #333333
+                font-size: 18px
+                line-height: 21px
+                border: 1px solid #F2F2F2
+            &-label
+                display: flex
+                justify-content: space-between
+                align-items: center
+                    
+            & .active &-label:after
+                content: url(../img/symbol/arrow-down.svg)
+        &__option
+            padding: 10px
+            flex-direction: column-reverse
+            margin-top: 0
+            font-size: 16px
+            line-height: 19px
+            margin-bottom: 20px 
+            &-item
+                margin-right: 10px 
+            &-info
+                width: 100%
+                padding: 0
+            &-zacaz
+                display: none
+            &-img
+                text-align: center
+            &-cart
+                max-width: 100%
+            &-h
+                display: block
+                font-size: 16px
+                line-height: 19px
+                & span
+                    margin-left: 15px
+                    color: #078600
+                    font-weight: bold
+                    font-size: 20px
+                    line-height: 23px
+                &__text
+                    font-weight: 300
+                    font-size: 12px
+                    line-height: 14px
+        &__form
+            padding: 0 

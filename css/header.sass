@@ -1,0 +1,210 @@
+.slider-menu
+    border-top: 1px solid rgba(37,37,37,.1)
+.slider-menu-back
+    background-color: white
+    span
+        background-color: white
+        -webkit-mask-image: none
+        text-indent: 0
+        transform: none
+        color: black
+.slider-menu a span
+    width: 100%
+    font-weight: normal
+    font-size: 16px
+    line-height: 130%
+    color: #333333
+    display: flex
+    align-items: center
+    &:before
+        margin-right: 15px
+        content: url(../img/logo/header-arrowleft.svg)
+.slider-menu-children>a::before
+    background-color: white
+    height: auto
+    -webkit-mask-image: none
+    width: auto
+    content: url(../img/logo/header-arrowright.svg)
+.hidden
+    display: none
+    margin: 0
+
+.header 
+    width: 100%
+    position: relative
+    z-index: 110
+    &-info
+        background-color: white      
+        box-sizing: border-box
+        max-width: 1170px
+        margin: auto
+        padding: 18px 5px 20px 5px
+        display: flex
+        justify-content: center
+        align-items: center
+        font-style: normal
+        font-size: 16px
+        line-height: 19px
+        color: #333333
+        &__toggle
+            display: none
+        &__center
+            display: flex
+            justify-content: center
+            margin-left: 3%
+            margin-right: 6%
+            align-items: center
+        &__item
+            display: flex
+            flex-direction: row
+            align-items: center
+            border-right: 1px solid #F2F2F2
+            padding-left: 10px
+            padding-right: 10px 
+            &-big
+                font-weight: 900
+            &-img
+                margin-right: 15px
+            &:last-child
+                border: 0
+                padding-right: 0
+            &:first-child
+                padding-left: 0
+            &-text
+                display: flex
+                flex-direction: column
+        &__contact
+            display: flex
+            flex-direction: column
+            &-phone
+                font-style: normal
+                font-weight: 900
+                font-size: 20px
+                line-height: 23px
+                text-transform: uppercase
+            &-link
+                font-style: normal
+                font-weight: normal
+                font-size: 14px
+                line-height: 16px
+                color: #555555
+                border-bottom: dotted #555555 1px
+    
+    &-menu 
+        border-top: 1px solid #F2F2F2
+        &__list
+            padding: 0
+            max-width: 1170px
+            margin: auto
+            display: flex
+            justify-content: center
+        &__item
+            box-sizing: border-box
+            display: flex
+            white-space: nowrap
+            padding: 8px 2% 8px 2%
+        &__link
+            font-weight: 700
+            font-size: 18px
+            line-height: 21px
+            color: #333333
+        &__service
+            position: relative
+            display: flex
+            white-space: nowrap
+            padding: 8px 2% 8px 2%
+            &-img
+                margin-left: 10px
+            &-list
+                padding: 0
+                position: absolute
+                width: 327px
+                margin-top: 24px
+                margin-left: -51px
+                z-index: 100
+                text-align: left
+                background-color: white
+            &-item
+                padding: 14px 15px 14px 20px
+                border-bottom: solid 1px #E0E0E0
+                &:last-child
+                    border: 0 
+
+    &-burger           
+        &__item a
+            box-sizing: border-box
+            font-weight: normal
+            font-size: 16px
+            line-height: 130%
+            color: #333333
+            text-transform: none
+            padding: 20px 30px
+            &:active
+                background-color: white
+            &:hover
+                background-color: white
+                color: #333333 
+    &-over
+        display: none
+        position: fixed
+        left: 0
+        top: 0
+        width: 100%
+        height: 100%
+        z-index: 100
+        background-color: rgba(30, 30, 30, 0.4)
+        &-active
+            display: inline-block
+ 
+    &-phone
+        display: none
+        justify-content: center
+        color: #4F4F4F
+        font-weight: 700
+        font-size: 24px
+        line-height: 28px
+        border-top: 1px solid #F2F2F2
+        padding: 11px 0 11px 0
+
+// 1200
+// 992-768
+// 576
+// 375
+// 320
+@media (max-width: 1100px) and (min-width: 750px)
+    .header
+        &-info
+            justify-content: space-between
+            &__center
+                display: none
+        &-menu
+            &__item
+                padding: 8px 1% 8px 1%
+
+@media (max-width: 750px)
+    .header 
+        &-info
+            padding: 15px 12px 5px 12px
+            justify-content: space-between
+            &__center
+                display: none
+            &__contact
+                display: none
+            &__toggle
+                display: inline-block
+                color: #06276F
+                font-size: 28px
+            &__logo 
+                width: 168px
+                height: 40px
+        &-menu
+            display: none
+        &-phone
+            display: flex
+            &__link
+                color: #4F4F4F
+    .burger-menu
+        display: inherit
+    
+
+                

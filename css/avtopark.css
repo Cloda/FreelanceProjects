@@ -1,0 +1,139 @@
+.slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+  margin-top: 50px;
+}
+
+.slick-dots li.slick-active button {
+  background-color: #282962;
+}
+
+.slick-dots li {
+  margin-right: 25px;
+  position: relative;
+  z-index: 4;
+}
+
+.slick-dots li button {
+  text-indent: -9999px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: white;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: 1px solid #282962;
+  padding: 0;
+  opacity: 1;
+  color: white;
+}
+
+.slick-dots li button:focus {
+  outline: none;
+}
+
+.avtopark {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  max-width: 1170px;
+  margin: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.avtopark__title {
+  margin: 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 120%;
+  letter-spacing: 0.07em;
+  margin-bottom: 40px;
+}
+
+.avtopark-cart {
+  text-align: center;
+}
+
+.avtopark-cart__title {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.avtopark-cart__price {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-transform: uppercase;
+  color: #2D9B27;
+}
+
+.avtopark-cart__img {
+  width: 664px;
+  margin: auto;
+}
+
+.avtopark-arrow__main {
+  position: relative;
+  z-index: 3;
+  margin: 0 auto;
+  margin-top: -35px;
+  width: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 1100px) and (min-width: 750px) {
+  .avtopark-cart__img {
+    width: 500px;
+  }
+}
+
+@media (max-width: 750px) {
+  .avtopark__title {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .avtopark-carusel {
+    width: 100%;
+  }
+  .avtopark-arrow__main {
+    display: none;
+  }
+  .avtopark-cart {
+    width: 320px !important;
+    margin-right: 2%;
+  }
+  .avtopark-cart__title {
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .avtopark-cart__img {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 314px;
+    margin-left: 10px;
+  }
+  .avtopark-cart__price {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+/*# sourceMappingURL=avtopark.css.map */

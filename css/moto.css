@@ -1,0 +1,23 @@
+.header-block {
+  background-color: #00ADA7;
+}
+
+.advantages {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.factor {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+@media (max-width: 750px) {
+  .description {
+    display: none;
+  }
+  .footer {
+    margin-top: 50px;
+  }
+}
+/*# sourceMappingURL=moto.css.map */

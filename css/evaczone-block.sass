@@ -1,0 +1,39 @@
+.zone
+    max-width: 1170px
+    padding-left: 15px
+    padding-right: 15px
+    margin: auto
+    &__title
+        margin: 0
+        margin-bottom: 20px 
+        font-weight: 500
+        font-size: 38px
+        line-height: 120%
+        letter-spacing: 0.07em
+    &__block
+        display: flex
+        flex-wrap: wrap
+    &__list
+        margin-right: 45px 
+    &__item
+        width: auto
+        color: #333333
+        font-size: 16px
+        line-height: 21px
+        margin-bottom: 20px
+        &:before
+            content: url(../img/logo/home.svg)
+            margin-right: 10px 
+    &__new
+        &:before
+            margin-right: 10px
+            content: url(../img/logo/road.svg)
+
+@media (max-width: 750px)
+    .zone
+        &__title
+            font-size: 24px
+            line-height: 32px
+        &__item
+            font-size: 16px
+            line-height: 32px

@@ -1,0 +1,18 @@
+.text {
+  max-width: 1170px;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.text__block {
+  -webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.07);
+          box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.07);
+  border-radius: 2px;
+  font-size: 16px;
+  line-height: 23px;
+  text-align: center;
+  background-color: #ffffff;
+  padding: 30px 20px;
+}
+/*# sourceMappingURL=header-text.css.map */

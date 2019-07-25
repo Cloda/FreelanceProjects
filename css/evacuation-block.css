@@ -1,0 +1,59 @@
+.evacuation {
+  max-width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto;
+}
+
+.evacuation__title {
+  margin: 0;
+  letter-spacing: 0.07em;
+  font-weight: 500;
+  font-size: 38px;
+  line-height: 120%;
+  margin-bottom: 20px;
+}
+
+.evacuation__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.evacuation__list > div {
+  margin-bottom: 30px;
+}
+
+.evacuation__list > div:last-child {
+  margin-bottom: 0;
+}
+
+.evacuation__item {
+  color: #000000;
+  font-size: 16px;
+  line-height: 130%;
+  margin-bottom: 10px;
+  vertical-align: bottom;
+}
+
+.evacuation__item:before {
+  vertical-align: bottom;
+  content: "\2022";
+  color: #FF7200;
+  font-size: 30px;
+  margin-right: 13px;
+}
+
+@media (max-width: 750px) {
+  .evacuation__title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+/*# sourceMappingURL=evacuation-block.css.map */

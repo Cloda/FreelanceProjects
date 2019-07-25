@@ -1,0 +1,228 @@
+
+    
+.footer
+    &__form
+        display: flex
+        flex-direction: column
+        background-color: #06276F
+        color: #ffffff 
+    &__fill
+        display: flex
+        flex-direction: column
+        margin: auto
+        box-sizing: border-box
+        max-width: 470px
+        padding-left: 15px
+        padding-right: 15px 
+    &__h
+        margin-bottom: 15px
+        margin-top: 49px
+        font-style: normal
+        font-weight: bold
+        font-size: 36px
+        line-height: 32px
+        text-transform: uppercase
+    &__describe
+        margin-bottom: 25px
+        font-size: 18px
+        line-height: 25px
+    &__main
+        width: 100%
+        display: flex
+        flex-direction: column
+        text-align: center
+        &-input
+            box-sizing: border-box
+            width: 100%
+            min-width: 20%
+            padding: 18px
+            outline: none
+            border: none
+            font-weight: 300
+            font-size: 16px
+            line-height: 25px
+            &::-webkit-input-placeholder
+                color: #000000 
+            &::-moz-placeholder
+                color: #000000 
+    &__name
+        margin-bottom: 30px
+    &__num
+        margin-bottom: 30px
+        position: relative
+        &-div
+            position: absolute
+            margin-top: -50px
+            left: 90%
+    &__auto
+        position: relative
+        margin-bottom: 30px
+        &-div
+            box-sizing: border-box
+            position: absolute
+            display: flex
+            justify-content: center
+            align-items: center
+            margin-top: -50px
+            left: 90%
+            background: #FF7200
+            border-radius: 50%
+            height: 31px
+            width: 31px
+    &__user
+        text-align: center
+        margin: auto
+        margin-top: 20px
+        width: 257px
+        font-size: 12px
+        line-height: 14px
+        margin-bottom: 49px
+        &-link
+            color: #0085FF
+.wrapper
+    display: flex
+    flex-direction: column 
+    align-items: center
+    background-image: url(../img/back/город_без_фона.svg)
+    background-position: center 5%
+    ​​​​​​​background-repeat: no-repeat
+    &__up
+        padding: 30px 15px 10px 15px
+    hr
+        margin: 20px 0
+        height: 4px
+        width: 60px
+        color: #FF7200
+        background-color: #FF7200
+        border: none
+    &__menu
+        margin-top: 39px
+        display: flex
+    &__service
+        margin-right: 90px
+        &-item
+            margin-bottom: 20px 
+            font-size: 18px
+            line-height: 21px 
+    &__contacts
+        margin-right: 90px
+        &-item
+            margin-bottom: 20px
+            display: flex
+            align-items: center
+            font-size: 18px
+            line-height: 21px
+            img
+                margin-right: 20px
+    &__title
+        font-weight: 700
+        font-size: 24px
+        line-height: 28px
+    &__copyright
+        margin: 0
+        width: 100%
+        margin-top: 73px
+        display: flex
+        justify-content: space-around
+        border-top: solid 1px #FF7200
+        padding-top: 13px
+        padding-bottom: 33px 
+    &__text
+    font-size: 14px
+    line-height: 108.19%
+
+    
+@media (max-width: 750px) and (min-width: 425px)
+    .footer
+        &__form
+            text-align: center 
+        &__num-div
+            left: 88%
+        &__auto-div
+            left: 88%
+    .wrapper
+        background: #F6F6F6
+        &__up
+            width: 100%
+            box-sizing: border-box
+            // padding: 30px 17px 0 17px
+        &__logo
+            width: 220px
+        &__menu
+            flex-direction: column
+        &__copyright
+            flex-direction: column
+            text-align: center
+            margin-top: 17px
+        &__text
+            margin-bottom: 15px
+            &:last-child
+                margin-bottom: 0
+        &__title
+            font-weight: 700
+            font-size: 18px
+            line-height: 21px 
+        &__service
+            &-list
+                display: flex
+                &-one
+                    margin-right: 20px
+            &-item
+                font-size: 16px
+                line-height: 19px
+        &__contacts
+            margin-top: 30px
+            margin-bottom: 30px
+            margin-right: 0
+            &-item
+                font-size: 16px
+                line-height: 19px
+@media (max-width: 425px)
+    .footer
+        &__form
+            text-align: center 
+        &__num-div
+            left: 88%
+        &__auto-div
+            left: 88%
+    .wrapper
+        background: #F6F6F6
+        &__up
+            width: 100%
+            box-sizing: border-box
+        &__logo
+            width: 220px
+        &__menu
+            flex-direction: column
+        &__copyright
+            flex-direction: column
+            text-align: center
+            margin-top: 17px
+        &__text
+            margin-bottom: 15px
+            &:last-child
+                margin-bottom: 0
+        &__title
+            font-weight: 700
+            font-size: 18px
+            line-height: 21px 
+        &__service
+            margin-right: 0
+            &-list
+                width: 100%
+                display: flex
+                justify-content: space-between
+            &-item
+                font-size: 16px
+                line-height: 19px
+        &__contacts
+            margin-top: 30px
+            margin-bottom: 30px
+            margin-right: 0
+            &-item
+                font-size: 16px
+                line-height: 19px
+    
+
+
+                

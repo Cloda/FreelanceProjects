@@ -1,0 +1,131 @@
+.clipPolygon {
+  -webkit-clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
+}
+
+.btn__superblock {
+  text-align: center;
+}
+
+.btn__btn {
+  width: 300px;
+  height: 70px;
+  background: #FF7200;
+  background-size: cover;
+  display: inline-block;
+}
+
+.btn__button {
+  vertical-align: middle;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+}
+
+.btn__button input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: transparent;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  cursor: pointer;
+}
+
+.btn__button a {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn__button:after {
+  content: "";
+  height: 2px;
+  width: 279px;
+  background: #FF7200;
+  position: absolute;
+  top: 73px;
+  left: 10px;
+  -webkit-transition-property: width, margin-left;
+  transition-property: width, margin-left;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+}
+
+.btn__button:before {
+  content: "";
+  height: 70px;
+  width: 2px;
+  background: #FF7200;
+  position: absolute;
+  margin-top: 5px;
+  margin-left: 295px;
+  -webkit-transform: rotate(12deg);
+          transform: rotate(12deg);
+  -webkit-transition-property: height, margin-top, margin-left;
+  transition-property: height, margin-top, margin-left;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+}
+
+.btn__button:hover:before {
+  height: 0;
+  margin-top: 0px;
+  margin-left: 304px;
+}
+
+.btn__button:hover:after {
+  width: 0;
+  margin-left: -10px;
+}
+
+@media (max-width: 1124px) and (min-width: 425px) {
+  .btn__superblock {
+    text-align: center !important;
+  }
+}
+
+@media (max-width: 425px) {
+  .btn__superblock {
+    text-align: center !important;
+  }
+  .btn__btn {
+    width: 240px;
+    height: 55px;
+  }
+  .btn__button:after {
+    width: 222px;
+    top: 58px;
+  }
+  .btn__button:before {
+    height: 55px;
+    margin-left: 236px;
+  }
+  .btn__button:hover:before {
+    height: 0;
+    margin-left: 245px;
+  }
+}
+/*# sourceMappingURL=superbutton.css.map */

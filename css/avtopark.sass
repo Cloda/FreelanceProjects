@@ -1,0 +1,103 @@
+.slick
+    &-dots
+        display: flex
+        justify-content: center
+        padding: 0
+        margin-top: 50px
+        & li.slick-active button
+            background-color: #282962
+        & li 
+            margin-right: 25px
+            position: relative
+            z-index: 4
+            & button
+                text-indent: -9999px
+                box-sizing: border-box 
+                background-color: white
+                height: 15px
+                width: 15px
+                border-radius: 50%
+                border: 1px solid #282962
+                padding: 0
+                opacity: 1
+                color: white
+                &:focus
+                    outline: none
+    
+.avtopark
+    box-sizing: border-box
+    max-width: 1170px
+    margin: auto
+    padding-left: 10px
+    padding-right: 10px
+
+    &__title
+        margin: 0
+        font-style: normal
+        font-weight: 500
+        font-size: 48px
+        line-height: 120%
+        letter-spacing: 0.07em
+        margin-bottom: 40px                
+    &-cart 
+        text-align: center
+        &__title
+            margin-top: 30px
+            margin-bottom: 30px
+            font-style: normal
+            font-weight: 500
+            font-size: 24px
+            line-height: 28px
+        &__price
+            font-style: normal
+            font-weight: bold
+            font-size: 36px
+            line-height: 42px
+            text-transform: uppercase
+            color: #2D9B27
+        &__img
+            width: 664px
+            margin: auto
+    &-arrow
+        &__main
+            position: relative
+            z-index: 3
+            margin: 0 auto
+            margin-top: -35px
+            width: 600px
+            display: flex
+            justify-content: space-between
+            align-items: center
+            
+
+            
+@media (max-width: 1100px) and (min-width: 750px)
+    .avtopark
+        &-cart__img
+            width: 500px
+
+@media (max-width: 750px)
+    .slick
+            
+    .avtopark
+        &__title
+            font-size: 28px
+            line-height: 32px
+        &-carusel
+            width: 100%
+        &-arrow
+            &__main
+                display: none
+        &-cart
+            width: 320px !important
+            margin-right: 2%
+            &__title
+                font-size: 18px
+                line-height: 21px
+            &__img
+                box-sizing: border-box
+                width: 314px
+                margin-left: 10px
+            &__price
+                font-size: 24px
+                line-height: 28px

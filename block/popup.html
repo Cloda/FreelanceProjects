@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Popup Show</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link  href="../fancybox-master/dist/jquery.fancybox.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/superbutton.css">
+    <link rel="stylesheet" href="../css/popup.css"> 
+</head>
+<body>
+    <a data-fancybox="popup" data-src="#popup" href="#">
+        open block
+    </a>
+    <div class="popup__block" id="popup">
+        <div class="popup__form">
+            <form method= "get"> 
+                <h2 class="popup__title">Вызвать эвакуатор</h2>
+                <p class="popup__text">Введите свои контактные данные <br>
+                        и в течение пяти минут с вами свяжуться</p>
+                <input class="popup__name" type="text" placeholder="Введите ваше имя">
+                <input class="popup__tel" type="tel" placeholder="Введите ваш телефон">
+                <div class="btn__superblock">
+                    <div class="btn__button">
+                        <div class="box clipPolygon btn__btn">
+                            <a href="#">Оставить отзыв</a>
+                        </div>
+                    </div>
+                </div>
+                <p class="popup__subtitle">
+                        Нажимая на кнопку ВЫЗОВ вы соглашаетесь <br>
+                        с <a href="#">политикой конфендициальности</a>
+                </p>
+            </form>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="../fancybox-master/dist/jquery.fancybox.min.js"></script>
+</body>
+</html>

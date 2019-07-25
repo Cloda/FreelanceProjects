@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/calc.css">
+</head>
+<body>
+    <!-- калькулятор -->
+    <section class="calc" id="calc">
+        <form action="GET" class="calc__form">
+            <div class="calc__transport">
+                <div id="one_trans" class="calc__transport-item checked">
+                    <input id="moto" type="radio" value="moto" name="transport" checked>
+                    <label @click="moto" class="calc__transport-label" for="moto">Мотоциклы</label>
+                </div>
+                <div id="two_trans" class="calc__transport-item">
+                    <input id="car" type="radio" value="car" name="transport">
+                    <label @click="auto" class="calc__transport-label" for="car">Легковые авто</label>
+                </div>
+                <div id="three_trans" class="calc__transport-item">
+                    <input id="vnecar"  type="radio" value="vnecar" name="transport">
+                    <label @click="vnecar" class="calc__transport-label" for="vnecar">Внедорожник</label>
+                </div>
+                <div id="four_trans" class="calc__transport-item">
+                    <input id="transport" type="radio" value="special" name="transport">
+                    <label @click="transport" class="calc__transport-label" for="transport">Спецтехника</label>
+                </div>
+            </div>
+            <div class="calc__hidden" id="click-hidden">
+                <div id="head" class="calc__hidden-item active">
+                    <span class="calc__hidden-label">{{ message }}</span>
+                </div>
+                <div class="calc__hidden-list" id="click-hidden-list">
+                    <div id="one_trans-h" class="calc__hidden-item">
+                        <input id="moto-h" type="radio" value="moto" name="transport" checked>
+                        <label class="calc__hidden-label" @click="moto" for="moto-h">Мотоциклы</label>
+                    </div>
+                    <div id="two_trans-h" class="calc__hidden-item">
+                        <input id="car-h" type="radio" value="car" name="transport">
+                        <label class="calc__hidden-label" @click="auto" for="car-h">Легковые авто</label>
+                    </div>
+                    <div id="three_trans-h" class="calc__hidden-item">
+                        <input id="vnecar-h"  type="radio" value="vnecar" name="transport">
+                        <label class="calc__hidden-label" @click="vnecar" for="vnecar-h">Внедорожник</label>
+                    </div>
+                    <div id="four_trans-h" class="calc__hidden-item">
+                        <input id="transport-h" type="radio" value="special" name="transport">
+                        <label class="calc__hidden-label" @click="transport" for="transport-h">Спецтехника</label>
+                    </div>
+                </div>
+            </div>
+            <div class="calc__option">
+                <div class="calc__option-h">
+                    <p class="calc__option-h__price">Сумма заказа: <span>{{ machine }} руб.</span></p>
+                    <p class="calc__option-h__text">*Окончательную сумму перевозки уточняйте у диспетчера</p>
+                </div>
+                <div class="calc__option-info">
+                    <div class="calc__option-circle">
+                        <p>Сколько колес заблокировано?</p>
+                        <div class="calc__option-list">
+                            <div id="zero_circle" class="calc__option-item checked">
+                                <input id="0_circle" type="radio" value="0" name="circle" checked>
+                                <label @click="circle=0" class="calc__option-label" for="0_circle">0</label>
+                            </div>
+                            <div id="one_circle" class="calc__option-item">
+                                <input id="1_circle" type="radio" value="1" name="circle">
+                                <label @click="circle=1" class="calc__option-label" for="1_circle">1</label>
+                            </div>
+                            <div id="two_circle" class="calc__option-item">
+                                <input id="2_circle" type="radio" value="2" name="circle">
+                                <label @click="circle=2" class="calc__option-label" for="2_circle">2</label>
+                            </div>
+                            <div id="three_circle" class="calc__option-item">
+                                <input id="3_circle" type="radio" value="3" name="circle">
+                                <label @click="circle=3" class="calc__option-label" for="3_circle">3</label>
+                            </div>
+                            <div id="four_circle" class="calc__option-item">
+                                <input id="4_circle" type="radio" value="4" name="circle">
+                                <label @click="circle=4" class="calc__option-label" for="4_circle">4</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="calc__option-place">
+                        <p>Сколько требуется посадочных мест?</p>
+                        <div class="calc__option-list">
+                            <div id="five_circle" class="calc__option-item checked">
+                                <input id="5_circle" type="radio" value="1" name=place checked>
+                                <label class="calc__option-label" for="5_circle">1</label>
+                            </div>
+                            <div id="six_circle" class="calc__option-item">
+                                <input id="6_circle" type="radio" value="2" name="place">
+                                <label class="calc__option-label" for="6_circle">2</label>
+                            </div>
+                            <div id="seven_circle" class="calc__option-item">
+                                <input id="7_circle" type="radio" value="3" name="place">
+                                <label class="calc__option-label" for="7_circle">3</label>
+                            </div>
+                            <div id="eight_circle" class="calc__option-item">
+                                <input id="8_circle" type="radio" value="4" name="place">
+                                <label class="calc__option-label" for="8_circle">4</label>
+                            </div>
+                            <div id="nine_circle" class="calc__option-item">
+                                <input id="9_circle" type="radio" value="5" name="place">
+                                <label class="calc__option-label" for="9_circle">5</label>
+                            </div>
+                            <div id="ten_circle" class="calc__option-item">
+                                <input id="10_circle" type="radio" value="6" name="place">
+                                <label class="calc__option-label" for="10_circle">6</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="venicle" class="calc__option-venicle">
+                        <input id="rul" name="rul" type="checkbox">
+                        <label @click="rul=!rul" class="calc__option-check" for="rul">Руль заблокирован</label>
+                    </div>
+                    <div id="kpp" class="calc__option-kpp">
+                        <input id="cpp" name="kpp" type="checkbox">
+                        <label @click="kpp=!kpp"  class="calc__option-check" for="cpp">КПП заблокирован</label>
+                    </div>
+                    <div>
+                        <input class="calc__option-phone" type="text" name="phone" placeholder="Ваш телефон">
+                    </div>
+                </div>
+                <div class="calc__option-show">
+                    <div class="calc__option-img">
+                        <img v-if="temp == 1" class="calc__option-cart" id="motoImg" src="../img/picture/мотик-big.png" alt="">
+                        <img v-if="temp == 2" class="calc__option-cart" id="avtoImg" src="../img/picture/мотик-big.png" alt="">
+                        <img v-if="temp == 3" class="calc__option-cart" id="vnecarImg" src="../img/picture/мотик-big.png" alt="">
+                        <img v-if="temp == 4" class="calc__option-cart" id="specImg" src="../img/picture/мотик-big.png" alt="">
+                    </div>
+                    <div class="calc__option-zacaz">
+                        <p class="calc__option-head">Минимальная сумма заказа:</p>
+                        <p class="calc__option-price">{{ machine }} <span>руб.</span></p>
+                        <p class="calc__option-text">
+                            *Окончательную сумму перевозки
+                                уточняйте у диспетчера
+                        </p>
+                    </div>
+
+                </div> 
+            </div>
+            <div class="calc__btn"><input class="superbutton" type="submit" value="Вызвать"></div>
+            <div class="calc__text">Нажимая на кнопку ВЫЗОВ вы соглашаетесь<a class="calc__link" href="#">с политикой конфендициальности</a></div>
+        </form>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.js" integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI="   crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="../script/calc.js"></script>
+</body>
+</html>

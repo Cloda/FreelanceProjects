@@ -1,0 +1,46 @@
+.error {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 70px 15px 70px 15px;
+}
+
+.error__block {
+  margin: auto;
+  text-align: center;
+}
+
+.error__text {
+  margin-top: 5px;
+  font-size: 45px;
+  line-height: 53px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.error__click {
+  color: white;
+}
+
+@media (max-width: 1130px) and (min-width: 355px) {
+  .error__img {
+    max-width: 355px;
+  }
+  .error__text {
+    font-size: 25px;
+    line-height: 29px;
+    white-space: normal;
+  }
+}
+
+@media (max-width: 355px) {
+  .error__img {
+    max-width: 300px;
+  }
+  .error__text {
+    font-size: 25px;
+    line-height: 29px;
+    white-space: normal;
+  }
+}
+/*# sourceMappingURL=404.css.map */

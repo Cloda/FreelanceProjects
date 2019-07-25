@@ -1,0 +1,100 @@
+.header-block {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-image: url(../img/back/bluephone.png);
+  background-repeat: no-repeat;
+  background-attachment: initial;
+  background-size: cover;
+  background-color: #06276F;
+  color: white;
+  padding: 68px 30px 145px 30px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.header-text {
+  margin-right: 10px;
+}
+
+.header-head {
+  margin: auto;
+  max-width: 1170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-head__title {
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 55px;
+  line-height: 130%;
+}
+
+.header-head__time {
+  padding: 0;
+  margin: 0;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 33px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.header-head__time span {
+  color: #FF7200;
+  font-size: 28px;
+  line-height: 33px;
+}
+
+@media (max-width: 1100px) and (min-width: 750px) {
+  .header-block {
+    padding: 55px 15px 168px 15px;
+  }
+  .header-head__title {
+    font-size: 28px;
+    line-height: 130%;
+  }
+  .header-head__time {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .header-cart {
+    max-width: 50%;
+  }
+  .header-img {
+    width: 345px;
+  }
+}
+
+@media (max-width: 750px) {
+  .header-block {
+    padding-left: 0;
+  }
+  .header-head {
+    padding-left: 15px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header-head__title {
+    font-size: 28px;
+    line-height: 130%;
+  }
+  .header-head__time {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .header-img {
+    max-width: 345px;
+    margin-left: -30px;
+  }
+}
+/*# sourceMappingURL=header-block.css.map */

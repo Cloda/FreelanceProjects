@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../css/slick/slick.css"/>
+    <!-- <link rel="stylesheet" type="text/css" href="../css/slick/slick-theme.css"/> -->
+    <link rel="stylesheet" href="../css/avtopark.css">
+</head>
+<body>
+    <section class="avtopark">
+        <!-- доделать карусель -->
+        <section class="avtopark-block">
+            <p class="avtopark__title">Наш автопарк</p>
+            <div class="avtopark-carusel">
+                <div class="avtopark-cart">
+                    <div class="avtopark-cart__picture"><img src="../img/picture/avtopark.png" alt="" class="avtopark-cart__img"></div>
+                    <div class="avtopark-cart__title">Эвакуатор с лебедкой</div>
+                    <div class="avtopark-cart__price">от 1200 руб.</div>
+                </div>
+                <div class="avtopark-cart">
+                    <div class="avtopark-cart__picture"><img src="../img/picture/avtopark.png" alt="" class="avtopark-cart__img"></div>
+                    <div class="avtopark-cart__title">Эвакуатор с лебедкой</div>
+                    <div class="avtopark-cart__price">от 1200 руб.</div>
+                </div>
+                <div class="avtopark-cart">
+                    <div class="avtopark-cart__picture"><img src="../img/picture/avtopark.png" alt="" class="avtopark-cart__img"></div>
+                    <div class="avtopark-cart__title">Эвакуатор с лебедкой</div>
+                    <div class="avtopark-cart__price">от 1200 руб.</div>
+                </div>
+            </div>
+            <div class="avtopark-arrow__main">
+                <span class="avtopark-arrow__left" id="avtopark-arrow__left">
+                    <img src="../img/symbol/arrow-carusel-left.svg" alt="">
+                </span>
+                <span class="avtopark-arrow__right">
+                    <img src="../img/symbol/arrow-carusel-right.svg" alt="">
+                </span>
+            </div>
+        </section>
+    </section>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="../css/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.avtopark-carusel').slick({
+                dots: true,
+                centerMode: true,
+                infinite: false,
+                slidesToShow: 1,
+                arrows: true,
+                // variableWidth: true,
+                prevArrow: '.avtopark-arrow__left',
+                nextArrow: '.avtopark-arrow__right',
+                responsive:
+                    [
+                        {
+                            breakpoint: 750,
+                            settings: 
+                                    {
+                                      variableWidth: true,
+                                    },
+                        }
+                    ]
+            });
+        });
+    </script>
+</body>
+</html>

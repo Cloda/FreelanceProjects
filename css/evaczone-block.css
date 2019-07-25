@@ -1,0 +1,57 @@
+.zone {
+  max-width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto;
+}
+
+.zone__title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 38px;
+  line-height: 120%;
+  letter-spacing: 0.07em;
+}
+
+.zone__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.zone__list {
+  margin-right: 45px;
+}
+
+.zone__item {
+  width: auto;
+  color: #333333;
+  font-size: 16px;
+  line-height: 21px;
+  margin-bottom: 20px;
+}
+
+.zone__item:before {
+  content: url(../img/logo/home.svg);
+  margin-right: 10px;
+}
+
+.zone__new:before {
+  margin-right: 10px;
+  content: url(../img/logo/road.svg);
+}
+
+@media (max-width: 750px) {
+  .zone__title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .zone__item {
+    font-size: 16px;
+    line-height: 32px;
+  }
+}
+/*# sourceMappingURL=evaczone-block.css.map */

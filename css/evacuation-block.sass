@@ -1,0 +1,39 @@
+.evacuation
+    max-width: 1170px
+    padding-left: 15px
+    padding-right: 15px 
+    margin: auto
+    &__title
+        margin: 0
+        letter-spacing: 0.07em
+        font-weight: 500
+        font-size: 38px
+        line-height: 120%
+        margin-bottom: 20px
+    &__list
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        & > div
+            margin-bottom: 30px
+            &:last-child
+                margin-bottom: 0
+    &__item
+        color: #000000
+        font-size: 16px
+        line-height: 130%
+        margin-bottom: 10px
+        vertical-align: bottom
+        &:before
+            vertical-align: bottom
+            content: "\2022"
+            color: #FF7200
+            font-size: 30px
+            margin-right: 13px
+
+@media (max-width: 750px)
+    .evacuation
+        &__title
+            font-weight: 500
+            font-size: 24px
+            line-height: 32px
