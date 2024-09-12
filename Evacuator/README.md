@@ -1,4 +1,4 @@
-Cписка проектов, выполненых во время работы на [Saygona](https://saygona.ru/). 
+Cписок проектов, выполненных во время работы в [Saygona](https://saygona.ru/). 
 * https://www.clockwork.ru
 * https://packink.ru 
 * https://evakuator-korolev.org 
